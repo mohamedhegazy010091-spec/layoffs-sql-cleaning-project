@@ -24,9 +24,18 @@ The goal of this project is to prepare a clean and consistent dataset for analys
 layoffs-sql-cleaning-project/
 │
 ├── README.md
-├── data/ # Raw dataset
-├── scripts/ # SQL scripts
-└── images/ # ERD or visuals
+├── data/
+│   └── layoffs.csv               # Raw dataset from Kaggle
+│
+├── scripts/
+│   ├── 01_create_staging.sql
+│   ├── 02_remove_duplicates.sql
+│   ├── 03_standardize_data.sql
+│   ├── 04_handle_nulls.sql
+│   └── 05_final_clean.sql
+│
+└── images/
+    └── erd_layoffs.png   
 ```
 
 ---
